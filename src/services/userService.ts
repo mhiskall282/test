@@ -11,7 +11,7 @@ import {
   orderBy,
   serverTimestamp 
 } from 'firebase/firestore';
-import { db } from '../firebase/config';
+import { db } from '../firebase/firebase.client.ts';
 import { User, UserRole } from '../types/User';
 
 const USERS_COLLECTION = 'users';
@@ -177,3 +177,4 @@ export const userService = {
     }
   }
 };
+
