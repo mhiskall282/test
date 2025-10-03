@@ -8,7 +8,7 @@ import {
   onAuthStateChanged,
   updateProfile
 } from 'firebase/auth';
-import { auth, googleProvider } from '../firebase/config';
+import { auth, googleProvider } from '../firebase/firebase.client.ts';
 import { User } from '../types/User';
 import { userService } from '../services/userService';
 import { adminService } from '../services/adminService';
@@ -126,3 +126,4 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
     </AuthContext.Provider>
   );
 }
+
